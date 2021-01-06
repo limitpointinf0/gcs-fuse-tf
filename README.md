@@ -12,7 +12,7 @@ terraform apply
 ``` 
 scp ../credentials.json `terraform output vm-ip`:~
 ssh `terraform output vm-ip`
-sudo gcsfuse -o allow_other --gid 0 --uid 0 --file-mode 777 --dir-mode 777 --key-file credentials.json  gcs_storage_fuse /gcs_storage
+sudo gcsfuse -o allow_other --gid 0 --uid 0 --file-mode 777 --dir-mode 777 --key-file /home/chris/credentials.json  gcs_storage_fuse /gcs_storage
 
 ```
 
