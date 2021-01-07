@@ -2,7 +2,7 @@
 A template for creating a Compute Engine instance with a mounted Cloud Storage bucket
 
 ## How To Start the Project
-- Step 1: Run the following commands to create the necessary VMs, instance groups, firewall configurations, etc. Three of the VMs will be running Nginx and listening on port 80. The test VM is reserved for Load Testing from Tokyo Japan. 
+- Step 1: Run the following commands to create the necessary VM and Bucket
 ```bash
 terraform init
 terraform plan
